@@ -42,12 +42,13 @@ def is_resources_sufficient(order_ingredients):
     return True #if we have looped through all items and there is enough resource
 
 def process_coins():
+    """Returns the total $ calculated from coins inserted"""
     print("Please insert coins")
     total = int(input("how many quarters?")) * 0.25
     total += int(input("how many dimes?")) * 0.1
     total += int(input("how many nickles?")) * 0.05
     total += int(input("how many pennies?")) * 0.01
-
+    return total #returns the total value
 is_on = True
 
 while is_on:
