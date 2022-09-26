@@ -30,6 +30,10 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+def is_resources_sufficient(order_ingredients):
+    """loop through each ingredient and check if there's enough"""
+
 is_on = True
 
 while is_on:
@@ -41,6 +45,11 @@ while is_on:
         print(f"Milk: {resources['milk']}50ml")
         print(f"Coffee: {resources['coffee']}g")
         print(f"Money: ${profit}")
+    else:
+        drink = MENU[choice]
+        print(drink)
+        is_resources_sufficient(drink["ingredients"])
+
 
 
 
