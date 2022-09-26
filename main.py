@@ -45,8 +45,11 @@ elif prompt == "off":
     print("MACHINE IS OFF")
 
 #For espresso:
+
 water_needed = MENU["espresso"]["ingredients"]["water"]
-print(water_needed)
+water_left = 300 - int(water_needed)
+print(f"Amount of water needed for espresso is {water_needed} ml. ")
+print(f"Water amount remaining is {water_left} ml. ")
 
 
 
