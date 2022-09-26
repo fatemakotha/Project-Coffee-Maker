@@ -33,6 +33,7 @@ resources = {
 
 # TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):
 prompt = input("What would you like? (espresso/latte/cappuccino): ").lower()
+amount_entered = int(input("Input the amount you want to enter in $: "))
 quarter = input("how many quarters?:")
 dime = input("how many dimes?:")
 nickles = input("how many nickles?:")
@@ -65,6 +66,10 @@ milk_needed = MENU["espresso"]["ingredients"]["milk"]
 milk_left = 200 - int(milk_needed)
 print(f"Amount of milk needed for espresso is {milk_needed} ml. ")
 print(f"Milk amount remaining is {milk_left} ml. ")
+#COST:
+cost_needed = MENU["espresso"]["cost"]
+change = amount_entered - cost_needed
+print(f"Here is your remaining {change} $")
 #For latte:
 #For cappucino:
 
