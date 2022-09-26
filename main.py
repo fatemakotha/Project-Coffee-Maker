@@ -64,7 +64,7 @@ while is_on:
         drink = MENU[choice]
         print(drink) #{'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}, 'cost': 2.5}
         if is_resources_sufficient(drink["ingredients"]):#takes 'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}
-
+            payment = process_coin() #lets say after processing coins you have $10, that gets saved here
 
 
 
