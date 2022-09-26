@@ -32,6 +32,8 @@ resources = {
 
 # TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):
 prompt = input("What would you like? (espresso/latte/cappuccino): ").lower()
+
+
 #TODO: 2. Check the user’s input
 if prompt == "espresso":
     print("Espresso")
@@ -39,3 +41,56 @@ elif prompt == "latte":
     print("Latte")
 elif prompt == "cappuccino":
     print("Cappuccino")
+elif prompt == "off":
+    print("MACHINE IS OFF")
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
