@@ -40,6 +40,15 @@ dimes = float(input("how many dimes?:"))
 nickles = float(input("how many nickles?:"))
 pennies = float(input("how many pennies?:"))
 
+quarter = quarters * 0.25
+print(quarter)
+dime = dimes * 0.1
+print(dime)
+nickle = nickles * 0.05
+print(nickle)
+penny = pennies * 0.01
+print(penny)
+
 #TODO: 2. Check the user’s input:
 if prompt == "espresso":
     print("Espresso")
