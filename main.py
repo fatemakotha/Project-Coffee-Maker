@@ -38,4 +38,4 @@ if prompt == "espresso":
 elif prompt == "latte":
     print("Latte")
 elif prompt == "cappuccino":
-    print("cappuccino")
+    print("Cappuccino")
