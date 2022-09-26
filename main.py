@@ -35,7 +35,7 @@ def is_resources_sufficient(order_ingredients):
     """loop through each ingredient and check if there's enough"""
     is_enough = True
     for item in order_ingredients:
-        if order_ingredients[item] >= resources[item] #lets say water needed is 200 we check if resources is less or more.
+        if order_ingredients[item] >= resources[item]: #lets say water needed is 200 we check if resources is less or more.
         # Then we do the same for milk and then for coffee
             print(f"Sorry there is not {item}")
             return False
@@ -53,10 +53,20 @@ def process_coins():
 def is_transaction_successful(money_recieved, drink_cost):
     """Return True when payment is accepted or return False if money is insufficient"""
     if money_recieved >= drink_cost:
+        change = money_recieved - drink_cost
+        print(f"HERE IS $ {change}")
+        global profit
+        profit += drink_cost
         return True
     else:
         print("Sorry. Money refunded")
         return False
+def make_coffee(drink_name, order_ingredients):
+    for item in order_ingredients:
+        resources[item] -= order_ingredients[item]
+    print(f"Here is your {drink_name}")
+
+
 
 is_on = True
 
@@ -65,8 +75,8 @@ while is_on:
     if choice == "off":
         is_on = False
     elif choice == "report":
-        print(f"Water: {resources['water']}100ml")
-        print(f"Milk: {resources['milk']}50ml")
+        print(f"Water: {resources['water']}ml")
+        print(f"Milk: {resources['milk']}ml")
         print(f"Coffee: {resources['coffee']}g")
         print(f"Money: ${profit}")
     else:
@@ -74,6 +84,8 @@ while is_on:
         print(drink) #{'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}, 'cost': 2.5}
         if is_resources_sufficient(drink["ingredients"]):#takes 'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}
             payment = process_coins() #lets say after processing coins you have $10, that gets saved here
+            if is_transaction_successful(payment, drink["cost"]):
+                make_coffee(choice, drink["ingredients"])
 
 
 
