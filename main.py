@@ -44,6 +44,9 @@ elif prompt == "cappuccino":
 elif prompt == "off":
     print("MACHINE IS OFF")
 
+#For espresso:
+water_needed = MENU["espresso"]["ingredients"]["water"]
+print(water_needed)
 
 
 
