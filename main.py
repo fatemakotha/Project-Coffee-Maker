@@ -66,7 +66,7 @@ print(f"Milk amount remaining is {milk_left} ml. ")
 #For cappucino:
 
 #TODO: 4. Report:
-print(f"Water left: {water_left}ml \n Milk left: {milk_left}ml \n Coffee left: {coffee_left}g \n and monet left is :  ")
+print(f"Water left: {water_left}ml \n Milk left: {milk_left}ml \n Coffee left: {coffee_left}g \n and money left is :  ")
 
 
 
