@@ -49,6 +49,9 @@ print(nickle)
 penny = pennies * 0.01
 print(penny)
 
+total_money_entered = penny + dime + nickle + quarter
+print(f"Total amount entered is $ {total_money_entered}")
+
 #TODO: 2. Check the user’s input:
 if prompt == "espresso":
     print("Espresso")
