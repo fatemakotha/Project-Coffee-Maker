@@ -35,7 +35,7 @@ resources = {
 prompt = input("What would you like? (espresso/latte/cappuccino): ").lower()
 
 
-#TODO: 2. Check the user’s input
+#TODO: 2. Check the user’s input:
 if prompt == "espresso":
     print("Espresso")
 elif prompt == "latte":
@@ -45,6 +45,7 @@ elif prompt == "cappuccino":
 elif prompt == "off":
     print("MACHINE IS OFF")
 
+#TODO: 3. Amount used and remaining:
 #For espresso:
 #WATER:
 water_needed = MENU["espresso"]["ingredients"]["water"]
@@ -54,17 +55,18 @@ print(f"Water amount remaining is {water_left} ml. ")
 #COFFEE:
 coffee_needed = MENU["espresso"]["ingredients"]["coffee"]
 coffee_left = 100 - int(coffee_needed)
-print(f"Amount of coffee needed for espresso is {coffee_needed} ml. ")
-print(f"Coffee amount remaining is {coffee_left} ml. ")
+print(f"Amount of coffee needed for espresso is {coffee_needed} g. ")
+print(f"Coffee amount remaining is {coffee_left} g. ")
 #MILK:
 milk_needed = MENU["espresso"]["ingredients"]["milk"]
 milk_left = 200 - int(milk_needed)
 print(f"Amount of milk needed for espresso is {milk_needed} ml. ")
 print(f"Milk amount remaining is {milk_left} ml. ")
-
-
 #For latte:
 #For cappucino:
+
+#TODO: 4. Report:
+print(f"Water left: {water_left}ml \n Milk left: {milk_left}ml \n Coffee left: {coffee_left}g \n and monet left is :  ")
 
 
 
