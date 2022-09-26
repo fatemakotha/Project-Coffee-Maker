@@ -33,11 +33,12 @@ resources = {
 
 # TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):
 prompt = input("What would you like? (espresso/latte/cappuccino): ").lower()
-amount_entered = int(input("Input the amount you want to enter in $: "))
-quarter = input("how many quarters?:")
-dime = input("how many dimes?:")
-nickles = input("how many nickles?:")
-pennies = input("how many pennies?:")
+
+# TODO: 5. Input no. of quarters, dimes nickles and pennies:
+quarters = float(input("how many quarters?:"))
+dimes = float(input("how many dimes?:"))
+nickles = float(input("how many nickles?:"))
+pennies = float(input("how many pennies?:"))
 
 #TODO: 2. Check the user’s input:
 if prompt == "espresso":
