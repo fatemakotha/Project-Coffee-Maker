@@ -33,7 +33,8 @@ resources = {
 is_on = True
 while True:
     choice = input("What would you like? (espresso/latte/cappuccino): ")
-
+    if choice == "off":
+        is_on = False
 
 
 
