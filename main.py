@@ -36,6 +36,11 @@ while is_on:
     choice = input("What would you like? (espresso/latte/cappuccino): ")
     if choice == "off":
         is_on = False
+    elif choice == "report":
+        print(f"Water: {resources['water']}100ml")
+        print(f"Milk: {resources['milk']}50ml")
+        print(f"Coffee: {resources['coffee']}g")
+        print(f"Money: ${profit}")
 
 
 
