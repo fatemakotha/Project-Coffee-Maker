@@ -39,7 +39,7 @@ quarters = float(input("how many quarters?:"))
 dimes = float(input("how many dimes?:"))
 nickles = float(input("how many nickles?:"))
 pennies = float(input("how many pennies?:"))
-
+# TODO: 6. Converted quarters, dimes nickles and pennies into dollars
 quarter = quarters * 0.25
 print(quarter)
 dime = dimes * 0.1
@@ -48,7 +48,7 @@ nickle = nickles * 0.05
 print(nickle)
 penny = pennies * 0.01
 print(penny)
-
+# TODO: 7 Caltulate total money entered:
 total_money_entered = penny + dime + nickle + quarter
 print(f"Total amount entered is $ {total_money_entered}")
 
