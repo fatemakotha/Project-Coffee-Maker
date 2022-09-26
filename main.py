@@ -49,6 +49,15 @@ def process_coins():
     total += int(input("how many nickles?")) * 0.05
     total += int(input("how many pennies?")) * 0.01
     return total #returns the total value
+
+def is_transaction_successful(money_recieved, drink_cost):
+    """Return True when payment is accepted or return False if money is insufficient"""
+    if money_recieved >= drink_cost:
+        return True
+    else:
+        print("Sorry. Money refunded")
+        return False
+
 is_on = True
 
 while is_on:
@@ -64,7 +73,7 @@ while is_on:
         drink = MENU[choice]
         print(drink) #{'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}, 'cost': 2.5}
         if is_resources_sufficient(drink["ingredients"]):#takes 'ingredients': {'water': 200, 'milk': 150, 'coffee': 24}
-            payment = process_coin() #lets say after processing coins you have $10, that gets saved here
+            payment = process_coins() #lets say after processing coins you have $10, that gets saved here
 
 
 
