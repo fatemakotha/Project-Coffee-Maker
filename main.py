@@ -2,6 +2,7 @@ MENU = {
     "espresso": {
         "ingredients": {
             "water": 50,
+            "milk": 0,
             "coffee": 18,
         },
         "cost": 1.5,
@@ -45,11 +46,25 @@ elif prompt == "off":
     print("MACHINE IS OFF")
 
 #For espresso:
-
+#WATER:
 water_needed = MENU["espresso"]["ingredients"]["water"]
 water_left = 300 - int(water_needed)
 print(f"Amount of water needed for espresso is {water_needed} ml. ")
 print(f"Water amount remaining is {water_left} ml. ")
+#COFFEE:
+coffee_needed = MENU["espresso"]["ingredients"]["coffee"]
+coffee_left = 100 - int(coffee_needed)
+print(f"Amount of coffee needed for espresso is {coffee_needed} ml. ")
+print(f"Coffee amount remaining is {coffee_left} ml. ")
+#MILK:
+milk_needed = MENU["espresso"]["ingredients"]["milk"]
+milk_left = 200 - int(milk_needed)
+print(f"Amount of milk needed for espresso is {milk_needed} ml. ")
+print(f"Milk amount remaining is {milk_left} ml. ")
+
+
+#For latte:
+#For cappucino:
 
 
 
