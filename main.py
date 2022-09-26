@@ -29,3 +29,7 @@ resources = {
     "milk": 200,
     "coffee": 100,
 }
+
+# TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):
+prompt = input("What would you like? (espresso/latte/cappuccino): ")
+
