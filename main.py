@@ -81,13 +81,35 @@ print(f"Amount of milk needed for espresso is {milk_needed} ml. ")
 print(f"Milk amount remaining is {milk_left} ml. ")
 #COST:
 cost_needed = MENU["espresso"]["cost"]
-change = amount_entered - cost_needed
+change = total_money_entered - cost_needed
+print(f"Amount of cost needed for espresso is {cost_needed} ml. ")
 print(f"Here is your remaining {change} $")
+
+
 #For latte:
+water_needed = MENU["latte"]["ingredients"]["water"]
+water_left = 300 - int(water_needed)
+print(f"Amount of water needed for latte is {water_needed} ml. ")
+print(f"Water amount remaining is {water_left} ml. ")
+#COFFEE:
+coffee_needed = MENU["latte"]["ingredients"]["coffee"]
+coffee_left = 100 - int(coffee_needed)
+print(f"Amount of coffee needed for latte is {coffee_needed} g. ")
+print(f"Coffee amount remaining is {coffee_left} g. ")
+#MILK:
+milk_needed = MENU["lattela"]["ingredients"]["milk"]
+milk_left = 200 - int(milk_needed)
+print(f"Amount of milk needed for latte is {milk_needed} ml. ")
+print(f"Milk amount remaining is {milk_left} ml. ")
+#COST:
+cost_needed = MENU["latte"]["cost"]
+change = total_money_entered - cost_needed
+print(f"Amount of cost needed for latte is {cost_needed} ml. ")
+print(f"Here is your remaining {change} $")
 #For cappucino:
 
 #TODO: 4. Report:
-print(f"Water left: {water_left}ml \n Milk left: {milk_left}ml \n Coffee left: {coffee_left}g \n and money left is :  ")
+print(f"Water left: {water_left}ml \n Milk left: {milk_left}ml \n Coffee left: {coffee_left}g \n and money left is : ${change} ")
 
 
 
