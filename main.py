@@ -33,6 +33,7 @@ resources = {
 
 # TODO: 1. Prompt user by asking “What would you like? (espresso/latte/cappuccino):
 prompt = input("What would you like? (espresso/latte/cappuccino): ").lower()
+print("Please insert coins.")
 
 
 #TODO: 2. Check the user’s input:
